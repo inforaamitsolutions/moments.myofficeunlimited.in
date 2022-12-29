@@ -135,7 +135,7 @@ class LoginController extends Controller
         $result['pendingTasks'] = count($pending);
         $result['tasks'] = count($t1);
 
-        $result['projects'] = Tasklist::where('deleted_at', NULL)->count();
+        $result['projects'] = TaskList::where('deleted_at', NULL)->count();
         $result['employee'] = Employee::where('deleted_at', NULL)->count();
         $result['allClients'] = Client::where('deleted_at', NULL)->count();
         $result['allVendors'] = Vendor::where('deleted_at', NULL)->count();

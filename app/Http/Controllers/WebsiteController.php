@@ -400,7 +400,7 @@ class WebsiteController extends Controller
         
         $employee = Employee::where('deleted_at',NULL)->count();
         $allClients = Client::where('deleted_at',NULL)->count();
-        $projects = Tasklist::where('deleted_at',NULL)->count();
+        $projects = TaskList::where('deleted_at',NULL)->count();
         $allVendors = Vendor::where('deleted_at',NULL)->count();
 
         $email = Session::get('user');
