@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\Loginuser;
 use App\Models\Task;
 use App\Models\Client;
-use App\Models\Tasklist;
+use App\Models\TaskList;
 use App\Models\Vendor;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
