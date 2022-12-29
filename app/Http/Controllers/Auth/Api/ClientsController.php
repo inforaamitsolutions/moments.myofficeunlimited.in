@@ -5,7 +5,7 @@ namespace App\Http\Controllers\auth\api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use App\Models\client;
+use App\Models\Client;
 use App\Models\Loginuser;
 use App\Http\Requests\ClientsAddRequest;
 use Illuminate\Support\Facades\Validator;
