@@ -52,18 +52,17 @@ class LoginController extends Controller
             // $test = $user->access_token = $user->createToken('User-authenticate-'.$user->id)->plainTextToken; //accessToken->token
             $user->access_token = $user->createToken('xNYTB8jHkIjMXbeyQaGdDiPrIZ2XatnQUNy016y7')->accessToken; //->plainTextToken
             // $success['token'] = $user->createToken('MyApp')-> accessToken;
-            $success['token'] = $user;
-            // dd($success['token']);
-            if (!isset($success['token'])) {
+            
+            if (!isset($user)) {
                 return response()->json([
                     'success'   => false,
                     'message'   => 'Unauthenticate User',
                 ], 200);
             }
-            $success['name'] = $user->name;
+            
             $response = [
                 'success' => true,
-                'data' => $success,
+                'data' => $user,
                 'message' => 'Uaser Login Sucessfully'
             ];
 
